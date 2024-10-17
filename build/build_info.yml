@@ -1,0 +1,55 @@
+cmake:
+  application:
+    configuration-dir: /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing
+    source-dir: /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing
+  board:
+    name: esp32_devkitc_wroom
+    qualifiers: esp32/procpu
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/bindings
+    files:
+     - /Users/moritzpohlandt/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom_procpu.dts
+     - /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.overlay
+    include-dirs:
+     - /Users/moritzpohlandt/zephyrproject/modules/hal/atmel/include
+     - /Users/moritzpohlandt/zephyrproject/modules/hal/gigadevice/include
+     - /Users/moritzpohlandt/zephyrproject/modules/hal/microchip/dts
+     - /Users/moritzpohlandt/zephyrproject/modules/hal/nuvoton/dts
+     - /Users/moritzpohlandt/zephyrproject/modules/hal/nxp/dts
+     - /Users/moritzpohlandt/zephyrproject/modules/hal/stm32/dts
+     - /Users/moritzpohlandt/zephyrproject/zephyr/include
+     - /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/common
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/x86
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/xtensa
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/sparc
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/riscv
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/posix
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/nios2
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/arm64
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/arm
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts/arc
+     - /Users/moritzpohlandt/zephyrproject/zephyr/dts
+    user-files:
+     - /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.overlay
+  kconfig:
+    files:
+     - /Users/moritzpohlandt/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom_procpu_defconfig
+     - /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/prj.conf
+     - /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.conf
+    user-files:
+     - /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/prj.conf
+     - /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.conf
+  toolchain:
+    name: zephyr
+    path: /Users/moritzpohlandt/zephyr-sdk-0.16.8
+  zephyr:
+    version: 3.7.99
+    zephyr-base: /Users/moritzpohlandt/zephyrproject/zephyr
+version: 0.1.0
+west:
+  command: /Users/moritzpohlandt/zephyrproject/.venv/bin/west build -p -b esp32_devkitc_wroom
+  topdir: /Users/moritzpohlandt/zephyrproject
+  version: 1.2.0

@@ -1,0 +1,33 @@
+empty_file.o: \
+ /Users/moritzpohlandt/zephyrproject/zephyr/misc/empty_file.c \
+ /Users/moritzpohlandt/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom_procpu.dts \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/xtensa/espressif/esp32/esp32_wroom_32ue_n4.dtsi \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/common/mem.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/common/freq.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/common/skeleton.dtsi \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_macro.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_internal.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_loops.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_listify.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/esp32_clock.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp-xtensa-intmux.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-pinctrl.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom-pinctrl.dtsi \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-gpio-sigmap.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/dt-bindings/input/esp32-touch-sensor-input.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/common/espressif/partitions_0x1000_amp.dtsi \
+ /Users/moritzpohlandt/zephyrproject/zephyr/dts/common/espressif/partitions_0x1000_amp_4M.dtsi \
+ /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.overlay

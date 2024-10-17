@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "wifi_mgmt.h": "c",
+        "sensor_data_types.h": "c"
+    }
+}

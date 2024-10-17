@@ -1,0 +1,11 @@
+# Load arch Kconfig descriptions.
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/x86/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/xtensa/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/sparc/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/riscv/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/posix/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/nios2/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/mips/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/arm64/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/arm/Kconfig"
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/arc/Kconfig"

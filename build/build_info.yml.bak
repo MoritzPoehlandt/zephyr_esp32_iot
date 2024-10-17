@@ -1,0 +1,4 @@
+west:
+  command: /Users/moritzpohlandt/zephyrproject/.venv/bin/west build -p -b esp32_devkitc_wroom
+  topdir: /Users/moritzpohlandt/zephyrproject
+  version: 1.2.0

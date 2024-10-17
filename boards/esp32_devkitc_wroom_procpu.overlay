@@ -1,0 +1,22 @@
+&spi3 {
+    status = "okay";
+    cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
+
+    spi_w5500: w5500@0 {
+        compatible = "wiznet,w5500";
+        reg = <0x0>;
+        spi-max-frequency = <10000000>;
+        int-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
+        reset-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
+        local-mac-address = [54 55 58 10 1a 24];
+    };
+};
+
+&i2c0 {
+	bme280: bme280@76 {
+		/* 0x76 - SDO <-> GND */
+		/* 0x77 - SDO <-> VCC */
+		compatible = "bosch,bme280";
+		reg = <0x76>;
+	};
+};
