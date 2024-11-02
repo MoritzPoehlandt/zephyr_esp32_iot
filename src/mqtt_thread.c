@@ -176,22 +176,15 @@ void mqtt_evt_handler(struct mqtt_client *const client,
 static char *get_mqtt_payload(enum mqtt_qos qos)
 {
 
-    q31_t temperature = 0;
-    q31_t pressure = 0;
-    q31_t humidity = 0;
+    int32_t waterlevel = 0;
 
 #if APP_BLUEMIX_TOPIC
 	static APP_BMEM char payload[80];
 
-    k_msgq_get(&temp_msgq, &temperature, K_FOREVER);
-    k_msgq_get(&press_msgq, &pressure, K_FOREVER);
-    k_msgq_get(&humidity_msgq, &humidity, K_FOREVER);
+    k_msgq_get(&waterlevel_msgq, &waterlevel, K_FOREVER);
 
 	snprintk(payload, sizeof(payload),  
-		"{\"temperature\": %s%d.%d,\n \"pressure\": %s%d.%d,\n \"humidity\": %s%d.%d}",
-		PRIq_arg(temperature, 6, 16),
-		PRIq_arg(pressure, 6, 23),
-		PRIq_arg(humidity, 6, 21));
+		"{\"waterlevel\": %d}", waterlevel);
 #else
 	static APP_DMEM char payload[] = "DOORS:OPEN_QoSx";
 

@@ -1,3 +1,31 @@
+/ {
+	zephyr,user {
+		io-channels = <&ads1115 0>;
+	};
+};
+
+
+&i2c0 {
+	status = "okay";
+
+	ads1115: ads1115@48 {
+		status = "okay";
+		compatible = "ti,ads1115";
+		reg = <0x48>;
+		label = "ADS1115";
+		#io-channel-cells = <1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		channel@0 {
+			reg = <0>;
+			zephyr,gain = "ADC_GAIN_1";
+			zephyr,reference = "ADC_REF_INTERNAL";
+			zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+			zephyr,resolution = <15>;
+		};
+	};
+};
+
 &spi3 {
     status = "okay";
     cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;

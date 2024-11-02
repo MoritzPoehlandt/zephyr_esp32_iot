@@ -215,6 +215,9 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/usb/common/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/usb_c/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/usb_c/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/adc/CMakeFiles/drivers__adc.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/adc/CMakeFiles/edit_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/adc/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/clock_control/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/clock_control/CMakeFiles/rebuild_cache.dir

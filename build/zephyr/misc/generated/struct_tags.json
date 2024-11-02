@@ -9,6 +9,7 @@
         "websocket_context"
     ],
     "__subsystem": [
+        "adc_driver_api",
         "entropy_driver_api",
         "gpio_driver_api",
         "i2c_driver_api",
@@ -18,7 +19,6 @@
         "spi_driver_api",
         "shared_irq_driver_api",
         "crypto_driver_api",
-        "adc_driver_api",
         "auxdisplay_driver_api",
         "bbram_driver_api",
         "bt_hci_driver_api",

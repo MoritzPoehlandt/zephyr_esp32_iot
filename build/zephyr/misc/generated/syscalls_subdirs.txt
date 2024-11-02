@@ -73,6 +73,7 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_arch_arc_v2_dsp
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_arch_arc_v2_mpu
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_arch_arc_v2_secureshield
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_arch_arc_v2_vpx
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_arch_arm_cortex_a_r
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_arch_arm_cortex_m
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_arch_arm_cortex_r

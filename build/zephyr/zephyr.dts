@@ -281,6 +281,23 @@
 			scl-gpios = < &gpio0 0x16 0x6 >;
 			pinctrl-0 = < &i2c0_default >;
 			pinctrl-names = "default";
+			ads1115: ads1115@48 {
+				status = "okay";
+				compatible = "ti,ads1115";
+				reg = < 0x48 >;
+				label = "ADS1115";
+				#io-channel-cells = < 0x1 >;
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				phandle = < 0xe >;
+				channel@0 {
+					reg = < 0x0 >;
+					zephyr,gain = "ADC_GAIN_1";
+					zephyr,reference = "ADC_REF_INTERNAL";
+					zephyr,acquisition-time = < 0x0 >;
+					zephyr,resolution = < 0xf >;
+				};
+			};
 			bme280: bme280@76 {
 				compatible = "bosch,bme280";
 				reg = < 0x76 >;
@@ -549,7 +566,7 @@
 		spim3_default: spim3_default {
 			phandle = < 0xb >;
 			group1 {
-				pinmux = < 0xff9013 >, < 0x1fffd2 >;
+				pinmux = < 0xff9013 >, < 0x1fffd2 >, < 0x227fc5 >;
 			};
 			group2 {
 				pinmux = < 0x20ffd7 >;
@@ -573,5 +590,8 @@
 			label = "BOOT Button";
 			zephyr,code = < 0xb >;
 		};
+	};
+	zephyr,user {
+		io-channels = < &ads1115 0x0 >;
 	};
 };

@@ -636,8 +636,8 @@
  spim3_default: spim3_default {
   group1 {
    pinmux = <(((19 & 0x3FU) << 0U) | ((64 & 0x1FFU) << 6U) | ((0x1FFU & 0x1FFU) << 15U))>,
-     <(((18 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((63 & 0x1FFU) << 15U))>;
-
+     <(((18 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((63 & 0x1FFU) << 15U))>,
+     <(((5 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((68 & 0x1FFU) << 15U))>;
   };
   group2 {
    pinmux = <(((23 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((65 & 0x1FFU) << 15U))>;
@@ -848,6 +848,34 @@
 };
 # 0 "<command-line>" 2
 # 1 "/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.overlay" 1
+/ {
+ zephyr,user {
+  io-channels = <&ads1115 0>;
+ };
+};
+
+
+&i2c0 {
+ status = "okay";
+
+ ads1115: ads1115@48 {
+  status = "okay";
+  compatible = "ti,ads1115";
+  reg = <0x48>;
+  label = "ADS1115";
+  #io-channel-cells = <1>;
+  #address-cells = <1>;
+  #size-cells = <0>;
+  channel@0 {
+   reg = <0>;
+   zephyr,gain = "ADC_GAIN_1";
+   zephyr,reference = "ADC_REF_INTERNAL";
+   zephyr,acquisition-time = <0>;
+   zephyr,resolution = <15>;
+  };
+ };
+};
+
 &spi3 {
     status = "okay";
     cs-gpios = <&gpio0 5 (1 << 0)>;
