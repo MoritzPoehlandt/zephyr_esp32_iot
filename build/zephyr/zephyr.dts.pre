@@ -847,34 +847,22 @@
 };
 # 0 "<command-line>" 2
 # 1 "/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.overlay" 1
-/ {
- zephyr,user {
-  io-channels = <&ads1115 0>;
- };
-};
+
+
+
+
+
 
 &wifi {
  status = "okay";
 };
-
+# 46 "/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/boards/esp32_devkitc_wroom_procpu.overlay"
 &i2c0 {
- status = "okay";
+ bme280: bme280@76 {
 
- ads1115: ads1115@48 {
-  status = "okay";
-  compatible = "ti,ads1115";
-  reg = <0x48>;
-  label = "ADS1115";
-  #io-channel-cells = <1>;
-  #address-cells = <1>;
-  #size-cells = <0>;
-  channel@0 {
-   reg = <0>;
-   zephyr,gain = "ADC_GAIN_1";
-   zephyr,reference = "ADC_REF_INTERNAL";
-   zephyr,acquisition-time = <0>;
-   zephyr,resolution = <15>;
-  };
+
+  compatible = "bosch,bme280";
+  reg = <0x76>;
  };
 };
 # 0 "<command-line>" 2

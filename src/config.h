@@ -54,7 +54,7 @@
 #if APP_BLUEMIX_TOPIC
 #define BLUEMIX_DEVTYPE		"esp32"
 #define BLUEMIX_DEVID		"001"
-#define BLUEMIX_EVENT		"water_level"
+#define BLUEMIX_EVENT		"temp"
 #define BLUEMIX_FORMAT		"json"
 #endif
 

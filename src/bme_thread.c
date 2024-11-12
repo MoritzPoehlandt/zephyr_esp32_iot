@@ -126,10 +126,10 @@ static int run_bme() {
         k_msgq_put(&press_msgq, &pressure, K_NO_WAIT);
         k_msgq_put(&humidity_msgq, &humidity, K_NO_WAIT);
 
-		// printk("temp: %s%d.%d; press: %s%d.%d; humidity: %s%d.%d\n",
-		// PRIq_arg(temp_data.readings[0].temperature, 6, temp_data.shift),
-		// 	PRIq_arg(press_data.readings[0].pressure, 6, press_data.shift),
-		//  PRIq_arg(hum_data.readings[0].humidity, 6, hum_data.shift));
+		printk("temp: %s%d.%d; press: %s%d.%d; humidity: %s%d.%d\n",
+		PRIq_arg(temp_data.readings[0].temperature, 6, temp_data.shift),
+			PRIq_arg(press_data.readings[0].pressure, 6, press_data.shift),
+		 PRIq_arg(hum_data.readings[0].humidity, 6, hum_data.shift));
 
 		k_sleep(K_MSEC(5000));
 	}

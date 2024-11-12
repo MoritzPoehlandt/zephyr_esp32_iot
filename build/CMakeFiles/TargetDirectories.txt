@@ -270,6 +270,9 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/asahi_kasei/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/bme280/CMakeFiles/drivers__sensor__bosch__bme280.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/bme280/CMakeFiles/edit_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/bme280/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/espressif/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/espressif/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/honeywell/CMakeFiles/edit_cache.dir
