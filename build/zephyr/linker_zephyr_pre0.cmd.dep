@@ -41,8 +41,9 @@ linker_zephyr_pre0.cmd: \
  /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/linker/rel-sections.ld \
  /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/include/generated/snippets-rwdata.ld \
  /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/include/generated/snippets-data-sections.ld \
- /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/linker/common-ram.ld \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/../subsys/net/conn_mgr/conn_mgr.ld \
  /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/linker/iterable_sections.h \
+ /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/linker/common-ram.ld \
  /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/include/generated/snippets-ram-sections.ld \
  /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/linker/cplusplus-ram.ld \
  /Users/moritzpohlandt/zephyrproject/zephyr/include/zephyr/linker/common-rom/common-rom-logging.ld \

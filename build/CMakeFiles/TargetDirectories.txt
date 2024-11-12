@@ -129,6 +129,8 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/modbus/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/pm/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/pm/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/pm/policy/CMakeFiles/edit_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/pm/policy/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/portability/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/portability/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/random/CMakeFiles/subsys__random.dir
@@ -159,6 +161,9 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/l2/ethernet/CMakeFiles/subsys__net__l2__ethernet.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/l2/ethernet/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/l2/ethernet/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/l2/wifi/CMakeFiles/subsys__net__l2__wifi.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/l2/wifi/CMakeFiles/edit_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/l2/wifi/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/pkt_filter/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/pkt_filter/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/ip/CMakeFiles/subsys__net__ip.dir
@@ -184,6 +189,9 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/lib/dns/CMakeFiles/subsys__net__lib__dns.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/lib/dns/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/lib/dns/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/conn_mgr/CMakeFiles/subsys__net__conn_mgr.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/conn_mgr/CMakeFiles/edit_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/net/conn_mgr/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/shell/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/shell/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/subsys/shell/modules/CMakeFiles/edit_cache.dir
@@ -262,9 +270,6 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/asahi_kasei/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/CMakeFiles/rebuild_cache.dir
-/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/bme280/CMakeFiles/drivers__sensor__bosch__bme280.dir
-/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/bme280/CMakeFiles/edit_cache.dir
-/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/bosch/bme280/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/espressif/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/espressif/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/sensor/honeywell/CMakeFiles/edit_cache.dir
@@ -320,6 +325,11 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/timer/CMakeFiles/drivers__timer.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/timer/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/timer/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/wifi/CMakeFiles/drivers__wifi.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/wifi/CMakeFiles/edit_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/wifi/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/wifi/esp32/CMakeFiles/edit_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/drivers/wifi/esp32/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/acpica/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/acpica/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/cmsis/CMakeFiles/edit_cache.dir
@@ -412,6 +422,10 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/loramac-node/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/lvgl/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/lvgl/CMakeFiles/rebuild_cache.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/mbedtls/CMakeFiles/mbedTLSBase.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/mbedtls/CMakeFiles/mbedTLSCrypto.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/mbedtls/CMakeFiles/mbedTLSX509.dir
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/mbedtls/CMakeFiles/modules__mbedtls.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/mbedtls/CMakeFiles/edit_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/mbedtls/CMakeFiles/rebuild_cache.dir
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/modules/mcuboot/CMakeFiles/edit_cache.dir

@@ -215,6 +215,7 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_modem_backend
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_net_conn_mgr
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_net_http
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_net_prometheus
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_posix_arpa
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_posix_net
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/misc/generated/syscalls_links/include_zephyr_posix_netinet

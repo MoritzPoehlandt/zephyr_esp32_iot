@@ -13,7 +13,6 @@
 /Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/Kconfig
 /Users/moritzpohlandt/zephyrproject/modules/hal/intel/zephyr/Kconfig
 /Users/moritzpohlandt/zephyrproject/modules/hal/intel/zephyr/subsys/logging/backends/Kconfig.i2c
-/Users/moritzpohlandt/zephyrproject/modules/hal/silabs/zephyr/Kconfig
 /Users/moritzpohlandt/zephyrproject/modules/hal/telink/Kconfig
 /Users/moritzpohlandt/zephyrproject/modules/hal/telink/tlsr9/Kconfig
 /Users/moritzpohlandt/zephyrproject/modules/lib/gui/lvgl/Kconfig
@@ -22,6 +21,9 @@
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/Kconfig.dts
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/Kconfig.modules
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/arch/Kconfig
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/boards/Kconfig
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/boards/Kconfig.defconfig
+/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/boards/Kconfig.esp32_devkitc_wroom
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/soc/Kconfig
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/soc/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/Kconfig/soc/Kconfig.soc
@@ -84,6 +86,8 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/esp_8266/Kconfig.shield
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/esp_8266/boards/disco_l475_iot1.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/esp_8266/boards/sam4e_xpro.defconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/eval_adxl362_ardz/Kconfig.shield
+/Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/eval_adxl372_ardz/Kconfig.shield
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/frdm_cr20a/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/frdm_cr20a/Kconfig.shield
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/frdm_cr20a/boards/frdm_k64f.defconfig
@@ -162,6 +166,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/waveshare_epaper/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/waveshare_epaper/Kconfig.shield
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/waveshare_ups/Kconfig.shield
+/Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/weact_ov2640_cam_module/Kconfig.shield
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/wnc_m14a2a/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/wnc_m14a2a/Kconfig.shield
 /Users/moritzpohlandt/zephyrproject/zephyr/boards/shields/x_nucleo_53l0a1/Kconfig.defconfig
@@ -264,6 +269,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/can/Kconfig.numaker
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/can/Kconfig.nxp_s32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/can/Kconfig.rcar
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/can/Kconfig.renesas_ra
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/can/Kconfig.sam
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/can/Kconfig.sam0
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/can/Kconfig.sja1000
@@ -351,6 +357,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/counter/Kconfig.nxp_mrt
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/counter/Kconfig.nxp_pit
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/counter/Kconfig.nxp_s32
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/counter/Kconfig.renesas_ra
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/counter/Kconfig.rpi_pico
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/counter/Kconfig.sam
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/counter/Kconfig.sam0
@@ -367,6 +374,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/crypto/Kconfig.mcux_dcp
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/crypto/Kconfig.npcx
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/crypto/Kconfig.nrf_ecb
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/crypto/Kconfig.si32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/crypto/Kconfig.smartbond
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/crypto/Kconfig.stm32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/crypto/Kconfig.xec
@@ -422,6 +430,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/display/Kconfig.rm68200
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/display/Kconfig.sdl
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/display/Kconfig.ssd1306
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/display/Kconfig.ssd1322
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/display/Kconfig.ssd1327
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/display/Kconfig.ssd16xx
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/display/Kconfig.st7735r
@@ -515,6 +524,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/ethernet/Kconfig.smsc91x
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/ethernet/Kconfig.stellaris
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/ethernet/Kconfig.stm32_hal
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/ethernet/Kconfig.test
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/ethernet/Kconfig.w5500
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/ethernet/Kconfig.xlnx_gem
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/ethernet/Kconfig.xmc4xxx
@@ -539,6 +549,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/flash/Kconfig.ifx_cat1
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/flash/Kconfig.it8xxx2
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/flash/Kconfig.lpc
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/flash/Kconfig.max32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/flash/Kconfig.mcux
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/flash/Kconfig.mspi
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/flash/Kconfig.nios2_qspi
@@ -934,6 +945,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pinctrl/Kconfig.lpc_iocon
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pinctrl/Kconfig.max32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pinctrl/Kconfig.mci_io_mux
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/pinctrl/Kconfig.mec5
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pinctrl/Kconfig.npcx
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pinctrl/Kconfig.nrf
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pinctrl/Kconfig.numaker
@@ -970,6 +982,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pwm/Kconfig.esp32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pwm/Kconfig.gd32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pwm/Kconfig.gecko
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/pwm/Kconfig.ifx_cat1
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pwm/Kconfig.imx
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pwm/Kconfig.intel_blinky
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/pwm/Kconfig.it8xxx2
@@ -1041,6 +1054,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/rtc/Kconfig.ifx_cat1
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/rtc/Kconfig.mc146818
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/rtc/Kconfig.numaker
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/rtc/Kconfig.nxp_irtc
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/rtc/Kconfig.pcf8523
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/rtc/Kconfig.pcf8563
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/rtc/Kconfig.rpi_pico
@@ -1177,6 +1191,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/nxp/mcux_lpcmp/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/nxp/nxp_kinetis_temp/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/nxp/nxp_tempmon/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/nxp/p3t1755/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/nxp/qdec_mcux/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/nxp/qdec_nxp_s32/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/pms7003/Kconfig
@@ -1279,6 +1294,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/vishay/veml7700/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/voltage_divider/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/wsen/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/sensor/wsen/wsen_hids_2525020210002/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/serial/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/serial/Kconfig.altera
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/serial/Kconfig.altera_jtag
@@ -1360,7 +1376,8 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.dw
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.esp32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.gd32
-/Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.gecko
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.gecko_eusart
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.gecko_usart
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.grlib_spimctrl
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.ifx_cat1
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/spi/Kconfig.litex
@@ -1419,6 +1436,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.mcux_gpt
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.mcux_lptmr
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.mcux_os
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.mec5
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.mips_cp0
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.mtk_adsp
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.native_posix
@@ -1430,6 +1448,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.riscv_machine
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.rv32m1_lptmr
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.sam0_rtc
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.silabs
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.smartbond
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.stm32_lptim
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/timer/Kconfig.sy1xx_sys_timer
@@ -1452,6 +1471,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/usb/udc/Kconfig.numaker
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/usb/udc/Kconfig.rpi_pico
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/usb/udc/Kconfig.skeleton
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/usb/udc/Kconfig.smartbond
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/usb/udc/Kconfig.stm32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/usb/udc/Kconfig.virtual
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/usb/uhc/Kconfig
@@ -1490,6 +1510,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/w1/Kconfig.ds2482-800
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/w1/Kconfig.ds2484
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/w1/Kconfig.ds2485
+/Users/moritzpohlandt/zephyrproject/zephyr/drivers/w1/Kconfig.max32
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/w1/Kconfig.test
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/w1/Kconfig.zephyr_gpio
 /Users/moritzpohlandt/zephyrproject/zephyr/drivers/w1/Kconfig.zephyr_serial
@@ -1621,7 +1642,6 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/Kconfig.picolibc
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/Kconfig.renesas_fsp
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/Kconfig.rust
-/Users/moritzpohlandt/zephyrproject/zephyr/modules/Kconfig.silabs
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/Kconfig.simplelink
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/Kconfig.sof
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/Kconfig.stm32
@@ -1650,6 +1670,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/hal_nordic/nrfx/Kconfig.logging
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/hal_nxp/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/hal_rpi_pico/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/modules/hal_silabs/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/hal_st/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/hostap/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/modules/liblc3/Kconfig
@@ -1738,7 +1759,8 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/mps2/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/mps3/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/mps3/Kconfig.defconfig
-/Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/mps3/Kconfig.defconfig.mps3_an547
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/mps3/Kconfig.defconfig.mps3_corstone300
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/mps3/Kconfig.defconfig.mps3_corstone310
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/mps3/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/musca/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/arm/musca/Kconfig.defconfig
@@ -1860,7 +1882,6 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/common/Kconfig.spiram
-/Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/common/Kconfig.wifi
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32/Kconfig.mac
@@ -1882,6 +1903,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32s2/Kconfig.mac
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32s2/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.amp
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.mac
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.soc
@@ -2128,12 +2150,11 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54h/Kconfig.defconfig.nrf54h20_cpuppr
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54h/Kconfig.defconfig.nrf54h20_cpurad
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54h/Kconfig.soc
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54h/gpd/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig.defconfig.nrf54l15_cpuapp
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig.defconfig.nrf54l15_cpuflpr
-/Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig.defconfig.nrf54l15_enga_cpuapp
-/Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig.defconfig.nrf54l15_enga_cpuflpr
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig.defconfig.nrf54l20_enga_cpuapp
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf54l/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/nordic/nrf91/Kconfig
@@ -2463,6 +2484,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s0/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s0/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s0/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s0/efm32hg/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s0/efm32hg/Kconfig.defconfig
@@ -2471,6 +2493,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s0/efm32wg/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s0/efm32wg/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s1/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s1/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s1/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s1/efm32gg11b/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s1/efm32gg11b/Kconfig.defconfig
@@ -2500,6 +2523,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s1/efr32mg12p/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s1/efr32mg12p/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s2/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s2/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s2/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s2/efr32bg22/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s2/efr32bg22/Kconfig.defconfig
@@ -2514,6 +2538,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s2/efr32mg24/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_s2/efr32mg24/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_sim3/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_sim3/Kconfig.defconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_sim3/Kconfig.soc
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_sim3/sim3u/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/soc/silabs/silabs_sim3/sim3u/Kconfig.defconfig
@@ -2924,6 +2949,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/fs/ext2/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/fs/fcb/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/fs/nvs/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/subsys/fs/zms/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/input/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/ipc/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/ipc/ipc_service/Kconfig
@@ -2990,6 +3016,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/mgmt/mcumgr/transport/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/mgmt/mcumgr/transport/Kconfig.bluetooth
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/mgmt/mcumgr/transport/Kconfig.dummy
+/Users/moritzpohlandt/zephyrproject/zephyr/subsys/mgmt/mcumgr/transport/Kconfig.lorawan
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/mgmt/mcumgr/transport/Kconfig.shell
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/mgmt/mcumgr/transport/Kconfig.uart
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/mgmt/mcumgr/transport/Kconfig.udp
@@ -3039,6 +3066,7 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/lwm2m/Kconfig.ucifi
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/mqtt/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/mqtt_sn/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/prometheus/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/ptp/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/sntp/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/sockets/Kconfig
@@ -3048,9 +3076,11 @@
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/tls_credentials/Kconfig.shell
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/trickle/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/websocket/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/wifi_credentials/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/lib/zperf/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/net/pkt_filter/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/pm/Kconfig
+/Users/moritzpohlandt/zephyrproject/zephyr/subsys/pm/policy/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/portability/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/portability/cmsis_rtos_v1/Kconfig
 /Users/moritzpohlandt/zephyrproject/zephyr/subsys/portability/cmsis_rtos_v2/Kconfig

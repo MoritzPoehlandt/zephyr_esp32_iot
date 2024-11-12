@@ -20,7 +20,7 @@
 "quicklogic":"/Users/moritzpohlandt/zephyrproject/modules/hal/quicklogic":"/Users/moritzpohlandt/zephyrproject/modules/hal/quicklogic"
 "hal_renesas":"/Users/moritzpohlandt/zephyrproject/modules/hal/renesas":"/Users/moritzpohlandt/zephyrproject/modules/hal/renesas"
 "hal_rpi_pico":"/Users/moritzpohlandt/zephyrproject/modules/hal/rpi_pico":"${ZEPHYR_HAL_RPI_PICO_CMAKE_DIR}"
-"hal_silabs":"/Users/moritzpohlandt/zephyrproject/modules/hal/silabs":"/Users/moritzpohlandt/zephyrproject/modules/hal/silabs"
+"hal_silabs":"/Users/moritzpohlandt/zephyrproject/modules/hal/silabs":"${ZEPHYR_HAL_SILABS_CMAKE_DIR}"
 "hal_st":"/Users/moritzpohlandt/zephyrproject/modules/hal/st":"/Users/moritzpohlandt/zephyrproject/modules/hal/st"
 "hal_stm32":"/Users/moritzpohlandt/zephyrproject/modules/hal/stm32":"/Users/moritzpohlandt/zephyrproject/modules/hal/stm32"
 "hal_telink":"/Users/moritzpohlandt/zephyrproject/modules/hal/telink":"/Users/moritzpohlandt/zephyrproject/modules/hal/telink"

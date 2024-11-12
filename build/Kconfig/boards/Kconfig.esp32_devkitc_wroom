@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/Users/moritzpohlandt/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom/Kconfig.esp32_devkitc_wroom"

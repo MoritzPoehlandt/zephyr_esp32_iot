@@ -2897,6 +2897,14 @@
     ],
     [
         [
+            "int gnss_get_latest_timepulse",
+            "const struct device *dev, k_ticks_t *timestamp"
+        ],
+        "gnss.h",
+        false
+    ],
+    [
+        [
             "int haptics_start_output",
             "const struct device *dev"
         ],
@@ -4089,7 +4097,7 @@
     ],
     [
         [
-            "ssize_t devmux_select_get",
+            "int devmux_select_get",
             "const struct device *dev"
         ],
         "devmux.h",

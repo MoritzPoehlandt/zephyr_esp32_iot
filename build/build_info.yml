@@ -46,7 +46,7 @@ cmake:
     name: zephyr
     path: /Users/moritzpohlandt/zephyr-sdk-0.16.8
   zephyr:
-    version: 3.7.99
+    version: 4.0.0-rc3
     zephyr-base: /Users/moritzpohlandt/zephyrproject/zephyr
 version: 0.1.0
 west:

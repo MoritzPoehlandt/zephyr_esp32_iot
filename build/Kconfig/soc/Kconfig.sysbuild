@@ -1,4 +1,4 @@
-# Load SoC sysbuild Kconfig descriptions.
+# Load Sysbuild SoC Kconfig descriptions.
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/soc/xlnx/zynqmp/Kconfig.sysbuild"
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/soc/xlnx/zynq7000/Kconfig.sysbuild"
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/soc/xen/Kconfig.sysbuild"

@@ -188,6 +188,30 @@ static inline int gnss_get_supported_systems(const struct device * dev, gnss_sys
 #endif
 
 
+extern int z_impl_gnss_get_latest_timepulse(const struct device * dev, k_ticks_t * timestamp);
+
+__pinned_func
+static inline int gnss_get_latest_timepulse(const struct device * dev, k_ticks_t * timestamp)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
+		union { uintptr_t x; k_ticks_t * val; } parm1 = { .val = timestamp };
+		return (int) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_GNSS_GET_LATEST_TIMEPULSE);
+	}
+#endif
+	compiler_barrier();
+	return z_impl_gnss_get_latest_timepulse(dev, timestamp);
+}
+
+#if defined(CONFIG_TRACING_SYSCALL)
+#ifndef DISABLE_SYSCALL_TRACING
+
+#define gnss_get_latest_timepulse(dev, timestamp) ({ 	int syscall__retval; 	sys_port_trace_syscall_enter(K_SYSCALL_GNSS_GET_LATEST_TIMEPULSE, gnss_get_latest_timepulse, dev, timestamp); 	syscall__retval = gnss_get_latest_timepulse(dev, timestamp); 	sys_port_trace_syscall_exit(K_SYSCALL_GNSS_GET_LATEST_TIMEPULSE, gnss_get_latest_timepulse, dev, timestamp, syscall__retval); 	syscall__retval; })
+#endif
+#endif
+
+
 #ifdef __cplusplus
 }
 #endif

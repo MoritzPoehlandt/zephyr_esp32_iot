@@ -1,4 +1,4 @@
-# Load Zephyr SoC Kconfig defconfig.
+# Load Zephyr SoC defconfig descriptions.
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/soc/xlnx/zynqmp/Kconfig.defconfig"
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/soc/xlnx/zynq7000/Kconfig.defconfig"
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/soc/xen/Kconfig.defconfig"

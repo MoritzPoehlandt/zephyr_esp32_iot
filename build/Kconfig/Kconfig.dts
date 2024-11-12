@@ -217,6 +217,11 @@ DT_COMPAT_ADI_MAX32_DMA := adi,max32-dma
 config DT_HAS_ADI_MAX32_DMA_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ADI_MAX32_DMA))
 
+DT_COMPAT_ADI_MAX32_FLASH_CONTROLLER := adi,max32-flash-controller
+
+config DT_HAS_ADI_MAX32_FLASH_CONTROLLER_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ADI_MAX32_FLASH_CONTROLLER))
+
 DT_COMPAT_ADI_MAX32_GCR := adi,max32-gcr
 
 config DT_HAS_ADI_MAX32_GCR_ENABLED
@@ -261,6 +266,11 @@ DT_COMPAT_ADI_MAX32_UART := adi,max32-uart
 
 config DT_HAS_ADI_MAX32_UART_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ADI_MAX32_UART))
+
+DT_COMPAT_ADI_MAX32_W1 := adi,max32-w1
+
+config DT_HAS_ADI_MAX32_W1_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ADI_MAX32_W1))
 
 DT_COMPAT_ADI_MAX32_WATCHDOG := adi,max32-watchdog
 
@@ -407,6 +417,11 @@ DT_COMPAT_AMBIQ_SPI_BLEIF := ambiq,spi-bleif
 config DT_HAS_AMBIQ_SPI_BLEIF_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_AMBIQ_SPI_BLEIF))
 
+DT_COMPAT_AMBIQ_SPID := ambiq,spid
+
+config DT_HAS_AMBIQ_SPID_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_AMBIQ_SPID))
+
 DT_COMPAT_AMBIQ_STIMER := ambiq,stimer
 
 config DT_HAS_AMBIQ_STIMER_ENABLED
@@ -532,15 +547,15 @@ DT_COMPAT_ANDESTECH_MACHINE_TIMER := andestech,machine-timer
 config DT_HAS_ANDESTECH_MACHINE_TIMER_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ANDESTECH_MACHINE_TIMER))
 
+DT_COMPAT_ANDESTECH_MBOX_PLIC_SW := andestech,mbox-plic-sw
+
+config DT_HAS_ANDESTECH_MBOX_PLIC_SW_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ANDESTECH_MBOX_PLIC_SW))
+
 DT_COMPAT_ANDESTECH_NCEPLIC100 := andestech,nceplic100
 
 config DT_HAS_ANDESTECH_NCEPLIC100_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ANDESTECH_NCEPLIC100))
-
-DT_COMPAT_ANDESTECH_PLIC_SW := andestech,plic-sw
-
-config DT_HAS_ANDESTECH_PLIC_SW_ENABLED
-	def_bool $(dt_compat_enabled,$(DT_COMPAT_ANDESTECH_PLIC_SW))
 
 DT_COMPAT_ANDESTECH_QSPI_NOR := andestech,qspi-nor
 
@@ -1447,6 +1462,11 @@ DT_COMPAT_BOSCH_BMP388 := bosch,bmp388
 config DT_HAS_BOSCH_BMP388_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_BOSCH_BMP388))
 
+DT_COMPAT_BOSCH_BMP390 := bosch,bmp390
+
+config DT_HAS_BOSCH_BMP390_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_BOSCH_BMP390))
+
 DT_COMPAT_BOSCH_BMP581 := bosch,bmp581
 
 config DT_HAS_BOSCH_BMP581_ENABLED
@@ -2192,11 +2212,6 @@ DT_COMPAT_GPIO_RADIO_COEX := gpio-radio-coex
 config DT_HAS_GPIO_RADIO_COEX_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_GPIO_RADIO_COEX))
 
-DT_COMPAT_GPIO_STEPPERS := gpio-steppers
-
-config DT_HAS_GPIO_STEPPERS_ENABLED
-	def_bool $(dt_compat_enabled,$(DT_COMPAT_GPIO_STEPPERS))
-
 DT_COMPAT_GREELED_LPD8803 := greeled,lpd8803
 
 config DT_HAS_GREELED_LPD8803_ENABLED
@@ -2336,6 +2351,11 @@ DT_COMPAT_INFINEON_CAT1_PINCTRL := infineon,cat1-pinctrl
 
 config DT_HAS_INFINEON_CAT1_PINCTRL_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_INFINEON_CAT1_PINCTRL))
+
+DT_COMPAT_INFINEON_CAT1_PWM := infineon,cat1-pwm
+
+config DT_HAS_INFINEON_CAT1_PWM_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_INFINEON_CAT1_PWM))
 
 DT_COMPAT_INFINEON_CAT1_QSPI_FLASH := infineon,cat1-qspi-flash
 
@@ -3657,6 +3677,16 @@ DT_COMPAT_MICROCHIP_MCP970X := microchip,mcp970x
 config DT_HAS_MICROCHIP_MCP970X_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_MICROCHIP_MCP970X))
 
+DT_COMPAT_MICROCHIP_MEC5_KTIMER := microchip,mec5-ktimer
+
+config DT_HAS_MICROCHIP_MEC5_KTIMER_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_MICROCHIP_MEC5_KTIMER))
+
+DT_COMPAT_MICROCHIP_MEC5_PINCTRL := microchip,mec5-pinctrl
+
+config DT_HAS_MICROCHIP_MEC5_PINCTRL_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_MICROCHIP_MEC5_PINCTRL))
+
 DT_COMPAT_MICROCHIP_MPFS_GPIO := microchip,mpfs-gpio
 
 config DT_HAS_MICROCHIP_MPFS_GPIO_ENABLED
@@ -4112,6 +4142,11 @@ DT_COMPAT_NORDIC_NRF_FLL16M := nordic,nrf-fll16m
 config DT_HAS_NORDIC_NRF_FLL16M_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF_FLL16M))
 
+DT_COMPAT_NORDIC_NRF_GPD := nordic,nrf-gpd
+
+config DT_HAS_NORDIC_NRF_GPD_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF_GPD))
+
 DT_COMPAT_NORDIC_NRF_GPIO := nordic,nrf-gpio
 
 config DT_HAS_NORDIC_NRF_GPIO_ENABLED
@@ -4492,6 +4527,11 @@ DT_COMPAT_NORDIC_NRF5X_REGULATOR := nordic,nrf5x-regulator
 config DT_HAS_NORDIC_NRF5X_REGULATOR_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF5X_REGULATOR))
 
+DT_COMPAT_NORDIC_NRF7000_COEX := nordic,nrf7000-coex
+
+config DT_HAS_NORDIC_NRF7000_COEX_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF7000_COEX))
+
 DT_COMPAT_NORDIC_NRF7000_QSPI := nordic,nrf7000-qspi
 
 config DT_HAS_NORDIC_NRF7000_QSPI_ENABLED
@@ -4502,6 +4542,11 @@ DT_COMPAT_NORDIC_NRF7000_SPI := nordic,nrf7000-spi
 config DT_HAS_NORDIC_NRF7000_SPI_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF7000_SPI))
 
+DT_COMPAT_NORDIC_NRF7001_COEX := nordic,nrf7001-coex
+
+config DT_HAS_NORDIC_NRF7001_COEX_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF7001_COEX))
+
 DT_COMPAT_NORDIC_NRF7001_QSPI := nordic,nrf7001-qspi
 
 config DT_HAS_NORDIC_NRF7001_QSPI_ENABLED
@@ -4511,6 +4556,11 @@ DT_COMPAT_NORDIC_NRF7001_SPI := nordic,nrf7001-spi
 
 config DT_HAS_NORDIC_NRF7001_SPI_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF7001_SPI))
+
+DT_COMPAT_NORDIC_NRF7002_COEX := nordic,nrf7002-coex
+
+config DT_HAS_NORDIC_NRF7002_COEX_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF7002_COEX))
 
 DT_COMPAT_NORDIC_NRF7002_QSPI := nordic,nrf7002-qspi
 
@@ -5197,6 +5247,11 @@ DT_COMPAT_NXP_IMX_FLEXSPI := nxp,imx-flexspi
 config DT_HAS_NXP_IMX_FLEXSPI_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_NXP_IMX_FLEXSPI))
 
+DT_COMPAT_NXP_IMX_FLEXSPI_APS6404L := nxp,imx-flexspi-aps6404l
+
+config DT_HAS_NXP_IMX_FLEXSPI_APS6404L_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NXP_IMX_FLEXSPI_APS6404L))
+
 DT_COMPAT_NXP_IMX_FLEXSPI_APS6408L := nxp,imx-flexspi-aps6408l
 
 config DT_HAS_NXP_IMX_FLEXSPI_APS6408L_ENABLED
@@ -5381,6 +5436,11 @@ DT_COMPAT_NXP_IRQSTEER_MASTER := nxp,irqsteer-master
 
 config DT_HAS_NXP_IRQSTEER_MASTER_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_NXP_IRQSTEER_MASTER))
+
+DT_COMPAT_NXP_IRTC := nxp,irtc
+
+config DT_HAS_NXP_IRTC_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NXP_IRTC))
 
 DT_COMPAT_NXP_KINETIS_ACMP := nxp,kinetis-acmp
 
@@ -5861,6 +5921,11 @@ DT_COMPAT_NXP_OS_TIMER := nxp,os-timer
 
 config DT_HAS_NXP_OS_TIMER_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_NXP_OS_TIMER))
+
+DT_COMPAT_NXP_P3T1755 := nxp,p3t1755
+
+config DT_HAS_NXP_P3T1755_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NXP_P3T1755))
 
 DT_COMPAT_NXP_PARALLEL_LCD_CONNECTOR := nxp,parallel-lcd-connector
 
@@ -6687,6 +6752,26 @@ DT_COMPAT_RENESAS_RA_ADC := renesas,ra-adc
 config DT_HAS_RENESAS_RA_ADC_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_RENESAS_RA_ADC))
 
+DT_COMPAT_RENESAS_RA_AGT := renesas,ra-agt
+
+config DT_HAS_RENESAS_RA_AGT_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_RENESAS_RA_AGT))
+
+DT_COMPAT_RENESAS_RA_AGT_COUNTER := renesas,ra-agt-counter
+
+config DT_HAS_RENESAS_RA_AGT_COUNTER_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_RENESAS_RA_AGT_COUNTER))
+
+DT_COMPAT_RENESAS_RA_CANFD := renesas,ra-canfd
+
+config DT_HAS_RENESAS_RA_CANFD_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_RENESAS_RA_CANFD))
+
+DT_COMPAT_RENESAS_RA_CANFD_GLOBAL := renesas,ra-canfd-global
+
+config DT_HAS_RENESAS_RA_CANFD_GLOBAL_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_RENESAS_RA_CANFD_GLOBAL))
+
 DT_COMPAT_RENESAS_RA_CGC_BUSCLK := renesas,ra-cgc-busclk
 
 config DT_HAS_RENESAS_RA_CGC_BUSCLK_ENABLED
@@ -6711,6 +6796,11 @@ DT_COMPAT_RENESAS_RA_CGC_PLL := renesas,ra-cgc-pll
 
 config DT_HAS_RENESAS_RA_CGC_PLL_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_RENESAS_RA_CGC_PLL))
+
+DT_COMPAT_RENESAS_RA_CGC_PLL_OUT := renesas,ra-cgc-pll-out
+
+config DT_HAS_RENESAS_RA_CGC_PLL_OUT_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_RENESAS_RA_CGC_PLL_OUT))
 
 DT_COMPAT_RENESAS_RA_CGC_SUBCLK := renesas,ra-cgc-subclk
 
@@ -7257,10 +7347,10 @@ DT_COMPAT_SIFIVE_WDT := sifive,wdt
 config DT_HAS_SIFIVE_WDT_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_SIFIVE_WDT))
 
-DT_COMPAT_SILABS_BT_HCI := silabs,bt-hci
+DT_COMPAT_SILABS_BT_HCI_EFR32 := silabs,bt-hci-efr32
 
-config DT_HAS_SILABS_BT_HCI_ENABLED
-	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_BT_HCI))
+config DT_HAS_SILABS_BT_HCI_EFR32_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_BT_HCI_EFR32))
 
 DT_COMPAT_SILABS_GECKO_ADC := silabs,gecko-adc
 
@@ -7327,6 +7417,11 @@ DT_COMPAT_SILABS_GECKO_SEMAILBOX := silabs,gecko-semailbox
 config DT_HAS_SILABS_GECKO_SEMAILBOX_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_GECKO_SEMAILBOX))
 
+DT_COMPAT_SILABS_GECKO_SPI_EUSART := silabs,gecko-spi-eusart
+
+config DT_HAS_SILABS_GECKO_SPI_EUSART_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_GECKO_SPI_EUSART))
+
 DT_COMPAT_SILABS_GECKO_SPI_USART := silabs,gecko-spi-usart
 
 config DT_HAS_SILABS_GECKO_SPI_USART_ENABLED
@@ -7371,6 +7466,36 @@ DT_COMPAT_SILABS_SERIES_CLOCK := silabs,series-clock
 
 config DT_HAS_SILABS_SERIES_CLOCK_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_SERIES_CLOCK))
+
+DT_COMPAT_SILABS_SERIES2_DCDC := silabs,series2-dcdc
+
+config DT_HAS_SILABS_SERIES2_DCDC_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_SERIES2_DCDC))
+
+DT_COMPAT_SILABS_SERIES2_HFRCODPLL := silabs,series2-hfrcodpll
+
+config DT_HAS_SILABS_SERIES2_HFRCODPLL_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_SERIES2_HFRCODPLL))
+
+DT_COMPAT_SILABS_SERIES2_HFRCOEM23 := silabs,series2-hfrcoem23
+
+config DT_HAS_SILABS_SERIES2_HFRCOEM23_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_SERIES2_HFRCOEM23))
+
+DT_COMPAT_SILABS_SERIES2_LFRCO := silabs,series2-lfrco
+
+config DT_HAS_SILABS_SERIES2_LFRCO_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_SERIES2_LFRCO))
+
+DT_COMPAT_SILABS_SERIES2_LFXO := silabs,series2-lfxo
+
+config DT_HAS_SILABS_SERIES2_LFXO_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_SERIES2_LFXO))
+
+DT_COMPAT_SILABS_SI32_AES := silabs,si32-aes
+
+config DT_HAS_SILABS_SI32_AES_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SILABS_SI32_AES))
 
 DT_COMPAT_SILABS_SI32_AHB := silabs,si32-ahb
 
@@ -7617,6 +7742,11 @@ DT_COMPAT_SOLOMON_SSD1306FB := solomon,ssd1306fb
 config DT_HAS_SOLOMON_SSD1306FB_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_SOLOMON_SSD1306FB))
 
+DT_COMPAT_SOLOMON_SSD1322 := solomon,ssd1322
+
+config DT_HAS_SOLOMON_SSD1322_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SOLOMON_SSD1322))
+
 DT_COMPAT_SOLOMON_SSD1327FB := solomon,ssd1327fb
 
 config DT_HAS_SOLOMON_SSD1327FB_ENABLED
@@ -7731,6 +7861,11 @@ DT_COMPAT_ST_IIS3DHHC := st,iis3dhhc
 
 config DT_HAS_ST_IIS3DHHC_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ST_IIS3DHHC))
+
+DT_COMPAT_ST_ILPS22QS := st,ilps22qs
+
+config DT_HAS_ST_ILPS22QS_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ST_ILPS22QS))
 
 DT_COMPAT_ST_ISM330DHCX := st,ism330dhcx
 
@@ -8427,6 +8562,11 @@ DT_COMPAT_ST_STM32G4_PLL_CLOCK := st,stm32g4-pll-clock
 config DT_HAS_ST_STM32G4_PLL_CLOCK_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ST_STM32G4_PLL_CLOCK))
 
+DT_COMPAT_ST_STM32H7_ETHERNET := st,stm32h7-ethernet
+
+config DT_HAS_ST_STM32H7_ETHERNET_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ST_STM32H7_ETHERNET))
+
 DT_COMPAT_ST_STM32H7_FDCAN := st,stm32h7-fdcan
 
 config DT_HAS_ST_STM32H7_FDCAN_ENABLED
@@ -8566,6 +8706,11 @@ DT_COMPAT_ST_STM32WB_RF := st,stm32wb-rf
 
 config DT_HAS_ST_STM32WB_RF_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ST_STM32WB_RF))
+
+DT_COMPAT_ST_STM32WB0_ADC := st,stm32wb0-adc
+
+config DT_HAS_ST_STM32WB0_ADC_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ST_STM32WB0_ADC))
 
 DT_COMPAT_ST_STM32WB0_FLASH_CONTROLLER := st,stm32wb0-flash-controller
 
@@ -9522,6 +9667,11 @@ DT_COMPAT_VND_ENUM_STRING_ARRAY_HOLDER := vnd,enum-string-array-holder
 config DT_HAS_VND_ENUM_STRING_ARRAY_HOLDER_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_VND_ENUM_STRING_ARRAY_HOLDER))
 
+DT_COMPAT_VND_ETHERNET := vnd,ethernet
+
+config DT_HAS_VND_ETHERNET_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_VND_ETHERNET))
+
 DT_COMPAT_VND_GPIO := vnd,gpio
 
 config DT_HAS_VND_GPIO_ENABLED
@@ -9746,6 +9896,16 @@ DT_COMPAT_VOLTAGE_DIVIDER := voltage-divider
 
 config DT_HAS_VOLTAGE_DIVIDER_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_VOLTAGE_DIVIDER))
+
+DT_COMPAT_WE_WSEN_HIDS_2525020210002 := we,wsen-hids-2525020210002
+
+config DT_HAS_WE_WSEN_HIDS_2525020210002_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_WE_WSEN_HIDS_2525020210002))
+
+DT_COMPAT_WEACT_DCMI_CAMERA_CONNECTOR := weact,dcmi-camera-connector
+
+config DT_HAS_WEACT_DCMI_CAMERA_CONNECTOR_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_WEACT_DCMI_CAMERA_CONNECTOR))
 
 DT_COMPAT_WINSEN_MHZ19B := winsen,mhz19b
 
@@ -10086,6 +10246,11 @@ DT_COMPAT_ZEPHYR_GPIO_EMUL_SDL := zephyr,gpio-emul-sdl
 
 config DT_HAS_ZEPHYR_GPIO_EMUL_SDL_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_ZEPHYR_GPIO_EMUL_SDL))
+
+DT_COMPAT_ZEPHYR_GPIO_STEPPERS := zephyr,gpio-steppers
+
+config DT_HAS_ZEPHYR_GPIO_STEPPERS_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_ZEPHYR_GPIO_STEPPERS))
 
 DT_COMPAT_ZEPHYR_HID_DEVICE := zephyr,hid-device
 

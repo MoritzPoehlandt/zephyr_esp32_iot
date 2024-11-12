@@ -29,9 +29,9 @@ K_MUTEX_DEFINE(level_mutex);
 /* Thread creation */
 static int run_waterlevel();
 
-K_THREAD_DEFINE(bme_thread, STACKSIZE,
-		run_waterlevel, NULL, NULL, NULL,
-		PRIORITY, 0, 0);
+// K_THREAD_DEFINE(bme_thread, STACKSIZE,
+// 		run_waterlevel, NULL, NULL, NULL,
+// 		PRIORITY, 0, 0);
 
 
 #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) || \

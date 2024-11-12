@@ -1,4 +1,4 @@
-# Load arch Kconfig descriptions.
+# Load Zephyr Arch Kconfig descriptions.
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/x86/Kconfig"
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/xtensa/Kconfig"
 osource "/Users/moritzpohlandt/zephyrproject/zephyr/arch/sparc/Kconfig"

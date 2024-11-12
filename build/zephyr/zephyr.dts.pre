@@ -636,8 +636,7 @@
  spim3_default: spim3_default {
   group1 {
    pinmux = <(((19 & 0x3FU) << 0U) | ((64 & 0x1FFU) << 6U) | ((0x1FFU & 0x1FFU) << 15U))>,
-     <(((18 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((63 & 0x1FFU) << 15U))>,
-     <(((5 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((68 & 0x1FFU) << 15U))>;
+     <(((18 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((63 & 0x1FFU) << 15U))>;
   };
   group2 {
    pinmux = <(((23 & 0x3FU) << 0U) | ((0x1FFU & 0x1FFU) << 6U) | ((65 & 0x1FFU) << 15U))>;
@@ -854,6 +853,9 @@
  };
 };
 
+&wifi {
+ status = "okay";
+};
 
 &i2c0 {
  status = "okay";
@@ -873,29 +875,6 @@
    zephyr,acquisition-time = <0>;
    zephyr,resolution = <15>;
   };
- };
-};
-
-&spi3 {
-    status = "okay";
-    cs-gpios = <&gpio0 5 (1 << 0)>;
-
-    spi_w5500: w5500@0 {
-        compatible = "wiznet,w5500";
-        reg = <0x0>;
-        spi-max-frequency = <10000000>;
-        int-gpios = <&gpio0 4 (1 << 0)>;
-        reset-gpios = <&gpio0 15 (1 << 0)>;
-        local-mac-address = [54 55 58 10 1a 24];
-    };
-};
-
-&i2c0 {
- bme280: bme280@76 {
-
-
-  compatible = "bosch,bme280";
-  reg = <0x76>;
  };
 };
 # 0 "<command-line>" 2

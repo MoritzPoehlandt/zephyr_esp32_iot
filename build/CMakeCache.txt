@@ -29,7 +29,7 @@ BOARD:STRING=esp32_devkitc_wroom
 //Deprecated BOARD, provided by user
 BOARD_DEPRECATED:STRING=esp32_devkitc_wroom
 
-//Board directory for board (esp32_devkitc_wroom)
+//Main board directory for board (esp32_devkitc_wroom)
 BOARD_DIR:PATH=/Users/moritzpohlandt/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom
 
 //Support board extensions
@@ -94,8 +94,9 @@ CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the ASM compiler during RELWITHDEBINFO builds.
 CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//Choose the type of build.
-CMAKE_BUILD_TYPE:STRING=MinSizeRel
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
+CMAKE_BUILD_TYPE:STRING=
 
 //CXX compiler
 CMAKE_CXX_COMPILER:STRING=/Users/moritzpohlandt/zephyr-sdk-0.16.8/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-g++
@@ -228,16 +229,16 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=waterlevel_sensing
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=3.7.99
+CMAKE_PROJECT_VERSION:STATIC=4.0.0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=4
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=7
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=99
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -404,6 +405,33 @@ ZephyrBuildConfiguration_DIR:PATH=ZephyrBuildConfiguration_DIR-NOTFOUND
 //The directory containing a CMake configuration file for Zephyr.
 Zephyr_DIR:PATH=/Users/moritzpohlandt/zephyrproject/zephyr/share/zephyr-package/cmake
 
+//Path to a library.
+btdm_app_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libbtdm_app.a
+
+//Path to a library.
+core_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libcore.a
+
+//Path to a library.
+espnow_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libespnow.a
+
+//Path to a library.
+mesh_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libmesh.a
+
+//Path to a library.
+net80211_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libnet80211.a
+
+//Path to a library.
+phy_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libphy.a
+
+//Path to a library.
+pp_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libpp.a
+
+//Path to a library.
+rtc_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/librtc.a
+
+//Path to a library.
+wapi_FOUND:FILEPATH=/Users/moritzpohlandt/zephyrproject/modules/hal/espressif/zephyr/blobs/lib/esp32/libwapi.a
+
 //Value Computed by CMake
 waterlevel_sensing_BINARY_DIR:STATIC=/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build
 
@@ -418,6 +446,8 @@ waterlevel_sensing_SOURCE_DIR:STATIC=/Users/moritzpohlandt/zephyrproject/project
 # INTERNAL cache entries
 ########################
 
+//List of board directories for board (esp32_devkitc_wroom)
+BOARD_DIRECTORIES:INTERNAL=/Users/moritzpohlandt/zephyrproject/zephyr/boards/espressif/esp32_devkitc_wroom
 //DT bindings root directories
 CACHED_DTS_ROOT_BINDINGS:INTERNAL=/Users/moritzpohlandt/zephyrproject/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -531,7 +561,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=189
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=193
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -587,6 +617,8 @@ HWM:INTERNAL=v2
 //Zephyr hardware model
 HWMv2:INTERNAL=True
 KERNEL_META_PATH:INTERNAL=/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/zephyr.meta
+//List of SoC directories for SoC (esp32)
+SOC_DIRECTORIES:INTERNAL=/Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif
 SOC_LINKER_SCRIPT:INTERNAL=/Users/moritzpohlandt/zephyrproject/zephyr/soc/espressif/esp32/default.ld
 //West
 WEST:INTERNAL=/Users/moritzpohlandt/zephyrproject/.venv/bin/python3.12;-m;west

@@ -124,7 +124,7 @@ config ZEPHYR_HAL_RPI_PICO_MODULE
 	default y
 endmenu
 menu "hal_silabs (/Users/moritzpohlandt/zephyrproject/modules/hal/silabs)"
-osource "/Users/moritzpohlandt/zephyrproject/modules/hal/silabs/zephyr/Kconfig"
+osource "$(ZEPHYR_HAL_SILABS_KCONFIG)"
 config ZEPHYR_HAL_SILABS_MODULE
 	bool
 	default y
