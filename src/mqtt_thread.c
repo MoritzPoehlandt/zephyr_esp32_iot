@@ -525,7 +525,7 @@ static int run_mqtt(void)
 
 	connect_to_wifi();
 
-	k_sleep(K_SECONDS(5));
+	k_sleep(K_SECONDS(60));
 
 	while (!CONFIG_NET_SAMPLE_APP_MAX_CONNECTIONS ||
 	       i++ < CONFIG_NET_SAMPLE_APP_MAX_CONNECTIONS) {

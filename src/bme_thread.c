@@ -131,7 +131,7 @@ static int run_bme() {
 			PRIq_arg(press_data.readings[0].pressure, 6, press_data.shift),
 		 PRIq_arg(hum_data.readings[0].humidity, 6, hum_data.shift));
 
-		k_sleep(K_MSEC(5000));
+		k_sleep(K_SECONDS(60));
 	}
 	return 0;
 }

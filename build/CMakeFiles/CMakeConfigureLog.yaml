@@ -4,7 +4,7 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:142 (include)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
@@ -16,9 +16,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:142 (include)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
@@ -41,9 +41,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:142 (include)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
@@ -62,14 +62,14 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is GNU, found in:
-        /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.o
+        /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/CMakeFiles/3.31.1/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:142 (include)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
@@ -92,9 +92,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/kernel.cmake:128 (project)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:142 (include)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
@@ -113,13 +113,13 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
       
       The CXX compiler identification is GNU, found in:
-        /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.o
+        /Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/CMakeFiles/3.31.1/CompilerIdCXX/CMakeCXXCompilerId.o
       
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1192 (message)"
-      - "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/kernel.cmake:134 (enable_language)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:142 (include)"
       - "/Users/moritzpohlandt/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"

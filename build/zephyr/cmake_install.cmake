@@ -332,3 +332,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/cmake/reports/cmake_install.cmake")
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "/Users/moritzpohlandt/zephyrproject/projects/waterlevel_sensing/build/zephyr/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()
