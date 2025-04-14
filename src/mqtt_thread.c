@@ -18,6 +18,7 @@ LOG_MODULE_REGISTER(net_mqtt_publisher, LOG_LEVEL_DBG);
 #include <zephyr/drivers/sensor_data_types.h>
 #include <zephyr/dsp/print_format.h>
 
+
 #include <string.h>
 #include <errno.h>
 
@@ -85,6 +86,8 @@ static APP_BMEM int nfds;
 
 static APP_BMEM bool connected;
 
+static bool wifi_connected;
+
 static void prepare_fds(struct mqtt_client *client)
 {
 	if (client->transport.type == MQTT_TRANSPORT_NON_SECURE) {
@@ -151,10 +154,14 @@ static void wifi_event_handler(struct net_mgmt_event_callback *cb, uint32_t mgmt
 	switch (mgmt_event) {
 	case NET_EVENT_WIFI_CONNECT_RESULT: {
 		LOG_INF("Connected to %s", WIFI_SSID);
+		wifi_connected = true;
 		break;
 	}
 	case NET_EVENT_WIFI_DISCONNECT_RESULT: {
 		LOG_INF("Disconnected from %s", WIFI_SSID);
+		// if disconnected try new connection 
+		wifi_connected = false;
+
 		break;
 	}
 	case NET_EVENT_WIFI_AP_ENABLE_RESULT: {
@@ -257,6 +264,11 @@ static char *get_mqtt_payload(enum mqtt_qos qos)
     k_msgq_get(&temp_msgq, &temperature, K_FOREVER);
     k_msgq_get(&press_msgq, &pressure, K_FOREVER);
     k_msgq_get(&humidity_msgq, &humidity, K_FOREVER);
+
+	printk("temp: %s%d.%06d; press: %s%d.%06d; humidity: %s%d.%06d\n",
+		PRIq_arg(temperature, 6, 16),
+		PRIq_arg(pressure, 6, 23),
+		PRIq_arg(humidity, 6, 21));
 
 	snprintk(payload, sizeof(payload),  
 		"{\"temperature\": %s%d.%d,\n \"pressure\": %s%d.%d,\n \"humidity\": %s%d.%d}",
@@ -462,20 +474,20 @@ static int process_mqtt_and_sleep(struct mqtt_client *client, int timeout)
 
 static int publisher(void)
 {
-	int i, rc, r = 0;
+	int rc, r = 0;
 
 	LOG_INF("attempting to connect: ");
 	rc = try_to_connect(&client_ctx);
 	PRINT_RESULT("try_to_connect", rc);
 	SUCCESS_OR_EXIT(rc);
 
-	i = 0;
-	while (i++ < CONFIG_NET_SAMPLE_APP_MAX_ITERATIONS && connected) {
+
+	while (connected) {
 		r = -1;
 
-		rc = mqtt_ping(&client_ctx);
-		PRINT_RESULT("mqtt_ping", rc);
-		SUCCESS_OR_BREAK(rc);
+		// rc = mqtt_ping(&client_ctx);
+		// PRINT_RESULT("mqtt_ping", rc);
+		// SUCCESS_OR_BREAK(rc);
 
 		rc = process_mqtt_and_sleep(&client_ctx, APP_SLEEP_MSECS);
 		SUCCESS_OR_BREAK(rc);
@@ -484,22 +496,22 @@ static int publisher(void)
 		PRINT_RESULT("mqtt_publish", rc);
 		SUCCESS_OR_BREAK(rc);
 
-		rc = process_mqtt_and_sleep(&client_ctx, APP_SLEEP_MSECS);
-		SUCCESS_OR_BREAK(rc);
+		// rc = process_mqtt_and_sleep(&client_ctx, APP_SLEEP_MSECS);
+		// SUCCESS_OR_BREAK(rc);
 
-		rc = publish(&client_ctx, MQTT_QOS_1_AT_LEAST_ONCE);
-		PRINT_RESULT("mqtt_publish", rc);
-		SUCCESS_OR_BREAK(rc);
+		// rc = publish(&client_ctx, MQTT_QOS_1_AT_LEAST_ONCE);
+		// PRINT_RESULT("mqtt_publish", rc);
+		// SUCCESS_OR_BREAK(rc);
 
-		rc = process_mqtt_and_sleep(&client_ctx, APP_SLEEP_MSECS);
-		SUCCESS_OR_BREAK(rc);
+		// rc = process_mqtt_and_sleep(&client_ctx, APP_SLEEP_MSECS);
+		// SUCCESS_OR_BREAK(rc);
 
-		rc = publish(&client_ctx, MQTT_QOS_2_EXACTLY_ONCE);
-		PRINT_RESULT("mqtt_publish", rc);
-		SUCCESS_OR_BREAK(rc);
+		// rc = publish(&client_ctx, MQTT_QOS_2_EXACTLY_ONCE);
+		// PRINT_RESULT("mqtt_publish", rc);
+		// SUCCESS_OR_BREAK(rc);
 
-		rc = process_mqtt_and_sleep(&client_ctx, APP_SLEEP_MSECS);
-		SUCCESS_OR_BREAK(rc);
+		// rc = process_mqtt_and_sleep(&client_ctx, APP_SLEEP_MSECS);
+		// SUCCESS_OR_BREAK(rc);
 
 		r = 0;
 	}
@@ -514,9 +526,7 @@ static int publisher(void)
 
 static int run_mqtt(void)
 {
-	int r = 0, i = 0;
-
-	k_sleep(K_SECONDS(5));
+	int r = 0;
 
 	net_mgmt_init_event_callback(&cb, wifi_event_handler, NET_EVENT_WIFI_MASK);
 	net_mgmt_add_event_callback(&cb);
@@ -524,17 +534,10 @@ static int run_mqtt(void)
 	sta_iface = net_if_get_wifi_sta();
 
 	connect_to_wifi();
+	k_sleep(K_SECONDS(15));
 
+	r = publisher();
 	k_sleep(K_SECONDS(60));
-
-	while (!CONFIG_NET_SAMPLE_APP_MAX_CONNECTIONS ||
-	       i++ < CONFIG_NET_SAMPLE_APP_MAX_CONNECTIONS) {
-		r = publisher();
-
-		if (!CONFIG_NET_SAMPLE_APP_MAX_CONNECTIONS) {
-			k_sleep(K_MSEC(5000));
-		}
-	}
 
 	return r;
 }

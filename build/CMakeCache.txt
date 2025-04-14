@@ -481,7 +481,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=31
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=6
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/opt/homebrew/bin/cmake
 //Path to cpack program executable.
@@ -616,7 +616,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Dtc:INTERNAL=[/opt/homebrew/bin/dtc][v1.7.2(1.4.6)]
 //Details about finding GnuLd
 FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[/Users/moritzpohlandt/zephyr-sdk-0.16.8/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/bin/ld.bfd][v2.38()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/moritzpohlandt/zephyrproject/.venv/bin/python3.12][cfound components: Interpreter ][v3.12.7(3.10)]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/moritzpohlandt/zephyrproject/.venv/bin/python3.12][cfound components: Interpreter ][v3.12.9(3.10)]
 //Zephyr hardware model version
 HWM:INTERNAL=v2
 //Zephyr hardware model
@@ -633,7 +633,7 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/Users/moritzpohlandt/zephyrproject/.venv/bin/python3.12
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;7;64;<none>;cpython-312-darwin.so;abi3;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/moritzpohlandt/zephyrproject/.venv/lib/python3.12;/Users/moritzpohlandt/zephyrproject/.venv/lib/python3.12/site-packages;/Users/moritzpohlandt/zephyrproject/.venv/lib/python3.12/site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;9;64;<none>;cpython-312-darwin.so;abi3;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/moritzpohlandt/zephyrproject/.venv/lib/python3.12;/Users/moritzpohlandt/zephyrproject/.venv/lib/python3.12/site-packages;/Users/moritzpohlandt/zephyrproject/.venv/lib/python3.12/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=7bb767087ada56e04cd8752301b8386f
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=

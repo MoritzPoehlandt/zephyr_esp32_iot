@@ -119,17 +119,17 @@ static int run_bme() {
 				&hum_fit, 1, &hum_data);
 		
 		q31_t temperature = temp_data.readings[0].temperature;
-		q31_t pressure = temp_data.readings[0].pressure;
-		q31_t humidity = temp_data.readings[0].humidity;
+		q31_t pressure = press_data.readings[0].pressure;
+		q31_t humidity = hum_data.readings[0].humidity;
 
         k_msgq_put(&temp_msgq, &temperature, K_NO_WAIT);
         k_msgq_put(&press_msgq, &pressure, K_NO_WAIT);
         k_msgq_put(&humidity_msgq, &humidity, K_NO_WAIT);
 
-		printk("temp: %s%d.%d; press: %s%d.%d; humidity: %s%d.%d\n",
-		PRIq_arg(temp_data.readings[0].temperature, 6, temp_data.shift),
-			PRIq_arg(press_data.readings[0].pressure, 6, press_data.shift),
-		 PRIq_arg(hum_data.readings[0].humidity, 6, hum_data.shift));
+		// printk("temp: %s%d.%06d; press: %s%d.%06d; humidity: %s%d.%06d\n",
+		// 	PRIq_arg(temperature, 6, temp_data.shift),
+		// 	PRIq_arg(pressure, 6, press_data.shift),
+		// 	PRIq_arg(humidity, 6, hum_data.shift));
 
 		k_sleep(K_SECONDS(60));
 	}
